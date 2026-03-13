@@ -9,7 +9,7 @@ layout: default
   <section class="episodes">
     <h2>Episodes</h2>
     {% for episode in site.episodes %}
-    <a href="{{ episode.page }}" class="link-block">
+    <a href="{{ episode.page | relative_url }}" class="link-block">
       Episode {{ episode.number }}: {{ episode.title }}
     </a>
     {% endfor %}

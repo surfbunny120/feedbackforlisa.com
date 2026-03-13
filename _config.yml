@@ -1,7 +1,7 @@
 title: "Feedback for Lisa"
 description: "Pick an episode and tell me what you think."
 url: "https://feedbackforlisa.com"
-baseurl: ""
+baseurl: "/feedbackforlisa.com"
 
 # Build settings
 markdown: kramdown
