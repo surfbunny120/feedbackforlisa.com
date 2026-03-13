@@ -1,0 +1,30 @@
+title: "Feedback for Lisa"
+description: "Pick an episode and tell me what you think."
+url: "https://feedbackforlisa.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Episodes
+episodes:
+  - number: 1
+    title: "Lucky"
+    page: "/episode-1"
+  - number: 2
+    title: "A Game"
+    page: "/episode-2"
+  - number: 3
+    title: "Billionaire Budgeting!"
+    page: "/episode-3"
+  - number: 4
+    title: "The Plan"
+    page: "/episode-4"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - google-apps-script.js

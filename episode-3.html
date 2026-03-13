@@ -1,0 +1,49 @@
+---
+layout: default
+title: "Episode 3: Billionaire Budgeting! — Feedback"
+episode_name: "Billionaire Budgeting!"
+episode_number: 3
+---
+
+<div class="container">
+  <h2 class="episode-header">Episode {{ page.episode_number }}</h2>
+  <p class="episode-title">{{ page.episode_name }}</p>
+  <p class="episode-prompt">What did you think of this episode?</p>
+
+  <form id="feedback-form" class="feedback-form">
+    <textarea name="feedback" placeholder="Type your feedback here..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="form-message" class="form-message"></p>
+
+  <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to episodes</a>
+</div>
+
+<script>
+  document.getElementById('feedback-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var feedback = this.feedback.value;
+    var msg = document.getElementById('form-message');
+    var btn = this.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = '...';
+
+    fetch('APPS_SCRIPT_URL_HERE', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ episode: '{{ page.episode_name }}', feedback: feedback })
+    }).then(function() {
+      msg.textContent = 'Thanks for your feedback!';
+      msg.style.color = '#111';
+      btn.textContent = 'Submit';
+      btn.disabled = false;
+      document.getElementById('feedback-form').reset();
+    }).catch(function() {
+      msg.textContent = 'Something went wrong. Try again?';
+      msg.style.color = '#FC00F9';
+      btn.textContent = 'Submit';
+      btn.disabled = false;
+    });
+  });
+</script>
