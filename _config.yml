@@ -14,14 +14,8 @@ episodes:
     title: "Lucky"
     page: "/episode-1"
   - number: 2
-    title: "A Game"
+    title: "An Honest Mistake"
     page: "/episode-2"
-  - number: 3
-    title: "Billionaire Budgeting!"
-    page: "/episode-3"
-  - number: 4
-    title: "The Plan"
-    page: "/episode-4"
 
 exclude:
   - Gemfile
