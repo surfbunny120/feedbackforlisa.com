@@ -38,7 +38,7 @@ layout: default
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email })
+      body: JSON.stringify({ email: email, source: 'the-pitch' })
     }).then(function() {
       msg.textContent = 'You\'re in!';
       msg.style.color = '#111';
