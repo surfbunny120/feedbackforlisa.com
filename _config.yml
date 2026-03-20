@@ -16,6 +16,7 @@ episodes:
   - number: 2
     title: "An Honest Mistake"
     page: "/episode-2"
+    coming_soon: true
 
 exclude:
   - Gemfile

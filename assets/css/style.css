@@ -70,6 +70,21 @@ h2 {
   transform: translateY(-1px);
 }
 
+/* Coming soon episodes */
+.link-block.coming-soon {
+  background: #071EF6;
+  color: #fff;
+  border-color: #071EF6;
+  cursor: default;
+}
+
+.link-block.coming-soon:hover {
+  background: #071EF6;
+  color: #fff;
+  border-color: #071EF6;
+  transform: none;
+}
+
 /* Episode feedback page */
 .episode-header {
   margin-bottom: 8px;

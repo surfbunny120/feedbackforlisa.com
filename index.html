@@ -9,9 +9,15 @@ layout: default
   <section class="episodes">
     <h2>Chapters</h2>
     {% for episode in site.episodes %}
+    {% if episode.coming_soon %}
+    <div class="link-block coming-soon">
+      #{{ episode.number }}: {{ episode.title }} — Coming Soon!
+    </div>
+    {% else %}
     <a href="{{ episode.page | relative_url }}" class="link-block">
       #{{ episode.number }}: {{ episode.title }}
     </a>
+    {% endif %}
     {% endfor %}
   </section>
 
