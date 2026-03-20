@@ -72,9 +72,6 @@ h2 {
 
 /* Coming soon episodes */
 .link-block.coming-soon {
-  background: #071EF6;
-  color: #fff;
-  border-color: #071EF6;
   cursor: default;
 }
 
@@ -82,7 +79,23 @@ h2 {
   background: #071EF6;
   color: #fff;
   border-color: #071EF6;
-  transform: none;
+  transform: translateY(-1px);
+}
+
+.link-block.coming-soon .default-text {
+  display: inline;
+}
+
+.link-block.coming-soon .hover-text {
+  display: none;
+}
+
+.link-block.coming-soon:hover .default-text {
+  display: none;
+}
+
+.link-block.coming-soon:hover .hover-text {
+  display: inline;
 }
 
 /* Episode feedback page */
