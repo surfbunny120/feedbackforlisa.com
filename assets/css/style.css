@@ -112,8 +112,22 @@ h2 {
 .episode-prompt {
   font-size: 1.05rem;
   color: #333;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   line-height: 1.7;
+}
+
+.episode-prompt + .feedback-form {
+  margin-top: 24px;
+}
+
+/* Inline links */
+.inline-link {
+  color: #071EF6;
+  text-decoration: underline;
+}
+
+.inline-link:hover {
+  color: #FC00F9;
 }
 
 /* Feedback form */
