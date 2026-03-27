@@ -12,7 +12,7 @@ layout: default
     {% if episode.coming_soon %}
     <div class="link-block coming-soon">
       <span class="default-text">#{{ episode.number }}: {{ episode.title }}</span>
-      <span class="hover-text">Coming March 27!</span>
+      <span class="hover-text">{{ episode.coming_soon_text }}</span>
     </div>
     {% else %}
     <a href="{{ episode.page | relative_url }}" class="link-block">

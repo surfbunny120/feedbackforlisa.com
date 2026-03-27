@@ -16,6 +16,11 @@ episodes:
   - number: 2
     title: "An Honest Mistake"
     page: "/episode-2"
+  - number: 3
+    title: "A Game"
+    page: "/episode-3"
+    coming_soon: true
+    coming_soon_text: "Coming April 3!"
 
 exclude:
   - Gemfile
