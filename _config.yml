@@ -21,6 +21,9 @@ episodes:
     page: "/episode-3"
     coming_soon: true
     coming_soon_text: "Coming April 3!"
+  - number: 4
+    title: "Billionaire Budgeting!"
+    page: "/episode-4"
 
 exclude:
   - Gemfile
